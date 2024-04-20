@@ -1,0 +1,44 @@
+-------------------------------------------
+|               ShoppingCart              |
+-------------------------------------------
+| - items: List<Item>                     |
+| - groceries: List<Item>                 |
+| - others: List<Item>                    |
+| - user: User                            |
+-------------------------------------------
+| + calculateTotal(): double             |
+| + calculateTotalGroceries(): double    |
+| + calculateTotalOthers(): double       |
+| + applyDiscounts(): double   		 |
+| + applyDiscountsOnGroceries(): double  |
+| + applyDiscountsOnOthers(): double     |
+| + listSeperater(): void                |
+| + getNetPayableAmount(): double        |
+-------------------------------------------
+
+-------------------------------------------
+|                  Item                   |
+-------------------------------------------
+| - name: String                         |
+| - price: double                        |
+| - category: Category                   |
+-------------------------------------------
+| + getName(): String                    |
+| + getPrice(): double                   |
+| + getCategory(): Category              |
+-------------------------------------------
+
+-------------------------------------------
+|                  User                   |
+-------------------------------------------
+| - isEmployee: boolean                  |
+| - isAffiliate: boolean                 |
+| - isCustomerOver2Years: boolean        |
+-------------------------------------------
+| + setEmployee(isEmployee: boolean)   |
+| + setAffiliate(isAffiliate: boolean) |
+| + setCustomerOver2Years(isCustomerOver2Years: boolean) |
+| + hasEmployeeDiscount(): boolean       |
+| + hasAffiliateDiscount(): boolean      |
+| + hasCustomerDiscount(): boolean       |
+-------------------------------------------
